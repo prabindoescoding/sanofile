@@ -1,9 +1,13 @@
 import { type Config } from "tailwindcss";
 
-export default {
+import { withUt } from "uploadthing/tw";
+ 
+
+ 
+export default withUt({
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
   },
   plugins: [],
-} satisfies Config;
+} )satisfies Config;
